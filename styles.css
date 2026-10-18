@@ -1,0 +1,267 @@
+/* ===================================================
+   StyleCart - Fashion Shopping Website Stylesheet
+   Simple & clean styling for a college frontend project
+   =================================================== */
+
+/* Basic resets and page setup */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f7f8f9;
+    color: #333333;
+    line-height: 1.5;
+}
+
+/* Header & Brand Logo */
+h1 {
+    margin: 20px 0 10px 0;
+}
+
+h1 a {
+    text-decoration: none;
+    color: #ff3f6c;
+    font-size: 32px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+h1 a:hover {
+    color: #e72744;
+}
+
+/* Navigation Bars */
+nav {
+    margin: 10px 0;
+    padding: 6px 0;
+    color: #cccccc;
+}
+
+nav a {
+    text-decoration: none;
+    color: #282c3f;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0 10px;
+    padding: 4px 6px;
+}
+
+nav a:hover {
+    color: #ff3f6c;
+    border-bottom: 2px solid #ff3f6c;
+}
+
+/* Search Form */
+form {
+    margin: 15px 0;
+}
+
+form label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333333;
+    margin-right: 6px;
+}
+
+input[type="search"] {
+    width: 320px;
+    max-width: 65%;
+    padding: 8px 12px;
+    font-size: 14px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    outline: none;
+}
+
+input[type="search"]:focus {
+    border-color: #ff3f6c;
+}
+
+/* Buttons */
+button {
+    background-color: #ff3f6c;
+    color: #ffffff;
+    border: none;
+    padding: 8px 18px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 6px;
+}
+
+button:hover {
+    background-color: #e72744;
+}
+
+/* Horizontal Dividers */
+hr {
+    border: none;
+    border-top: 1px solid #e0e0e0;
+    margin: 25px auto;
+    width: 90%;
+}
+
+/* Main Content & Section Headings */
+main {
+    padding: 10px;
+}
+
+h2 {
+    color: #282c3f;
+    font-size: 22px;
+    letter-spacing: 1px;
+    margin: 15px 0 10px 0;
+}
+
+h3 {
+    color: #333333;
+    font-size: 16px;
+    margin: 10px 0 6px 0;
+}
+
+p {
+    color: #555555;
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+/* General Links */
+a {
+    color: #ff3f6c;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section Banner */
+section img {
+    max-width: 92%;
+    height: auto;
+    border-radius: 6px;
+}
+
+/* Product & Category Cards */
+article {
+    display: inline-block;
+    vertical-align: top;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    padding: 15px;
+    margin: 12px;
+    width: 250px;
+    text-align: center;
+}
+
+article:hover {
+    border-color: #ff3f6c;
+}
+
+article img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 4px;
+    display: block;
+    margin: 0 auto 10px auto;
+}
+
+article h3 {
+    font-size: 16px;
+    margin-top: 8px;
+}
+
+article p {
+    font-size: 13px;
+    color: #666666;
+}
+
+article a {
+    display: inline-block;
+    margin-top: 8px;
+}
+
+/* Footer Section */
+footer {
+    background-color: #ffffff;
+    border-top: 1px solid #e0e0e0;
+    padding: 30px 15px;
+    margin-top: 30px;
+}
+
+footer section {
+    display: inline-block;
+    vertical-align: top;
+    margin: 10px 40px;
+    text-align: left;
+}
+
+footer h3 {
+    font-size: 14px;
+    color: #282c3f;
+    margin-bottom: 12px;
+    letter-spacing: 0.5px;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer li {
+    margin: 6px 0;
+}
+
+footer a {
+    text-decoration: none;
+    color: #696b79;
+    font-size: 13px;
+    font-weight: normal;
+}
+
+footer a:hover {
+    color: #ff3f6c;
+    text-decoration: underline;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 600px) {
+    nav a {
+        display: inline-block;
+        margin: 4px 6px;
+        font-size: 12px;
+    }
+
+    input[type="search"] {
+        width: 80%;
+        margin-bottom: 10px;
+    }
+
+    button {
+        display: inline-block;
+        margin-top: 5px;
+    }
+
+    article {
+        width: 90%;
+        max-width: 280px;
+        margin: 10px auto;
+        display: block;
+    }
+
+    footer section {
+        display: block;
+        text-align: center;
+        margin: 15px 0;
+    }
+}
