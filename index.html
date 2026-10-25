@@ -4,219 +4,132 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Myntra - Fashion Shopping</title>
+    <title>Myntra Fashion Store</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <center>
-        <h1>
-            <a href="https://www.myntra.com/">MYNTRA</a>
-        </h1>
+    <header class="header">
+        <a href="#" class="logo">MYN<span>TRA</span></a>
 
-        <nav>
-            <a href="https://www.myntra.com/shop/men">MEN</a> |
-            <a href="https://www.myntra.com/shop/women">WOMEN</a> |
-            <a href="https://www.myntra.com/shop/kids">KIDS</a> |
-            <a href="https://www.myntra.com/home-living">HOME & LIVING</a> |
-            <a href="https://www.myntra.com/personal-care">BEAUTY</a> |
-            <a href="https://www.myntra.com/studio">STUDIO</a>
+        <nav class="navigation">
+            <a href="#men">MEN</a>
+            <a href="#women">WOMEN</a>
+            <a href="#kids">KIDS</a>
+            <a href="#home">HOME</a>
+            <a href="#beauty">BEAUTY</a>
         </nav>
 
-        <br>
+        <input type="text" class="search" placeholder="Search for products">
 
-        <form action="https://www.myntra.com/" method="get">
-            <label for="search">Search:</label>
-            <input
-                type="search"
-                id="search"
-                name="query"
-                placeholder="Search for products, brands and more"
-            >
-            <button type="submit">Search</button>
-        </form>
+        <div class="user-links">
+            <a href="#profile">Profile</a>
+            <a href="#wishlist">Wishlist</a>
+            <a href="#bag">Bag</a>
+        </div>
+    </header>
 
-        <br>
+    <section class="offer-strip">
+        <h2>BIG FASHION SALE</h2>
+        <p>UP TO 70% OFF ON YOUR FAVOURITE STYLES</p>
+    </section>
 
-        <nav>
-            <a href="https://www.myntra.com/">Profile</a> |
-            <a href="https://www.myntra.com/">Wishlist</a> |
-            <a href="https://www.myntra.com/">Bag</a>
-        </nav>
+    <section class="hero">
+        <div class="hero-content">
+            <p class="small-heading">NEW COLLECTION 2026</p>
+            <h1>Style That<br>Speaks For You</h1>
+            <p>Discover the latest fashion trends and refresh your wardrobe.</p>
+            <a href="#trending" class="shop-button">SHOP NOW</a>
+        </div>
 
-        <hr>
+        <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1000&q=80" alt="Fashion collection">
+    </section>
 
-        <main>
+    <section class="section" id="categories">
+        <h2 class="section-title">SHOP BY CATEGORY</h2>
+        <p class="section-subtitle">Find your favourite style</p>
 
-            <section>
-                <h2>BIG FASHION SALE</h2>
-                <p>Discover the latest fashion and lifestyle products.</p>
+        <div class="category-grid">
+            <a href="#men" class="category-card" id="men">
+                <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=600&q=80" alt="Men fashion">
+                <h3>Men's Fashion</h3>
+            </a>
 
-                <a href="https://www.myntra.com/">
-                    <img
-                        src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=1400&q=80"
-                        alt="Fashion clothing store"
-                        width="1200"
-                        height="400"
-                    >
-                </a>
-            </section>
+            <a href="#women" class="category-card" id="women">
+                <img src="https://images.unsplash.com/photo-1485230895905-ec40ba36b9bc?auto=format&fit=crop&w=600&q=80" alt="Women fashion">
+                <h3>Women's Fashion</h3>
+            </a>
 
-            <hr>
+            <a href="#kids" class="category-card" id="kids">
+                <img src="https://images.unsplash.com/photo-1503919005314-30d93d07d823?auto=format&fit=crop&w=600&q=80" alt="Kids fashion">
+                <h3>Kids' Fashion</h3>
+            </a>
 
-            <section>
-                <h2>SHOP BY CATEGORY</h2>
+            <a href="#home" class="category-card" id="home">
+                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=600&q=80" alt="Shoes">
+                <h3>Footwear</h3>
+            </a>
+        </div>
+    </section>
 
-                <article>
-                    <h3>Men's Fashion</h3>
-                    <a href="https://www.myntra.com/shop/men">
-                        <img
-                            src="https://images.unsplash.com/photo-1617137968427-85924c800a22?auto=format&fit=crop&w=400&q=80"
-                            alt="Men's fashion"
-                            width="250"
-                            height="300"
-                        >
-                    </a>
-                    <p>Explore men's clothing and fashion.</p>
-                </article>
+    <section class="section trending" id="trending">
+        <h2 class="section-title">TRENDING PRODUCTS</h2>
+        <p class="section-subtitle">Your next favourite is waiting</p>
 
-                <article>
-                    <h3>Women's Fashion</h3>
-                    <a href="https://www.myntra.com/shop/women">
-                        <img
-                            src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=400&q=80"
-                            alt="Women's fashion"
-                            width="250"
-                            height="300"
-                        >
-                    </a>
-                    <p>Discover clothing and new trends.</p>
-                </article>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=600&q=80" alt="Casual T-shirt">
+                <h3>Casual T-Shirt</h3>
+                <p class="price">₹499 <span>₹999</span></p>
+                <p class="discount">50% OFF</p>
+                <button class="add-button">Add to Bag</button>
+            </div>
 
-                <article>
-                    <h3>Footwear</h3>
-                    <a href="https://www.myntra.com/shoes">
-                        <img
-                            src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=400&q=80"
-                            alt="Red sports shoes"
-                            width="250"
-                            height="300"
-                        >
-                    </a>
-                    <p>Find shoes for every occasion.</p>
-                </article>
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1542272604-787c3835535d?auto=format&fit=crop&w=600&q=80" alt="Denim jeans">
+                <h3>Classic Denim</h3>
+                <p class="price">₹999 <span>₹1,499</span></p>
+                <p class="discount">33% OFF</p>
+                <button class="add-button">Add to Bag</button>
+            </div>
 
-                <article>
-                    <h3>Accessories</h3>
-                    <a href="https://www.myntra.com/accessories">
-                        <img
-                            src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=400&q=80"
-                            alt="Fashion watch"
-                            width="250"
-                            height="300"
-                        >
-                    </a>
-                    <p>Complete your look with accessories.</p>
-                </article>
-            </section>
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=600&q=80" alt="Fashion shoes">
+                <h3>Fashion Footwear</h3>
+                <p class="price">₹799 <span>₹1,299</span></p>
+                <p class="discount">38% OFF</p>
+                <button class="add-button">Add to Bag</button>
+            </div>
 
-            <hr>
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=600&q=80" alt="Fashion outfit">
+                <h3>Modern Outfit</h3>
+                <p class="price">₹1,299 <span>₹1,999</span></p>
+                <p class="discount">35% OFF</p>
+                <button class="add-button">Add to Bag</button>
+            </div>
+        </div>
+    </section>
 
-            <section>
-                <h2>TRENDING NOW</h2>
+    <section class="style-banner" id="beauty">
+        <p>YOUR STYLE, YOUR RULES</p>
+        <h2>Make Every Outfit Count</h2>
+        <a href="#categories" class="shop-button">EXPLORE NOW</a>
+    </section>
 
-                <article>
-                    <img
-                        src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=400&q=80"
-                        alt="Casual T-shirt"
-                        width="220"
-                        height="260"
-                    >
-                    <h3>Casual T-Shirt</h3>
-                    <p>Brand: Everyday Wear</p>
-                    <p>Price: Rs. 499</p>
-                    <a href="https://www.myntra.com/">View Product</a>
-                </article>
+    <footer class="footer">
+        <h2>MYNTRA</h2>
+        <p>Fashion for every mood and every moment.</p>
 
-                <article>
-                    <img
-                        src="https://images.unsplash.com/photo-1542272604-787c3835535d?auto=format&fit=crop&w=400&q=80"
-                        alt="Blue denim jeans"
-                        width="220"
-                        height="260"
-                    >
-                    <h3>Denim Jeans</h3>
-                    <p>Brand: Denim Style</p>
-                    <p>Price: Rs. 999</p>
-                    <a href="https://www.myntra.com/">View Product</a>
-                </article>
+        <div class="footer-links">
+            <a href="#men">Men</a>
+            <a href="#women">Women</a>
+            <a href="#kids">Kids</a>
+            <a href="#categories">Categories</a>
+        </div>
 
-                <article>
-                    <img
-                        src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=400&q=80"
-                        alt="Women's footwear"
-                        width="220"
-                        height="260"
-                    >
-                    <h3>Fashion Footwear</h3>
-                    <p>Brand: Trendy Steps</p>
-                    <p>Price: Rs. 799</p>
-                    <a href="https://www.myntra.com/">View Product</a>
-                </article>
-
-                <article>
-                    <img
-                        src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=400&q=80"
-                        alt="Fashion outfit"
-                        width="220"
-                        height="260"
-                    >
-                    <h3>Fashion Outfit</h3>
-                    <p>Brand: Style Collection</p>
-                    <p>Price: Rs. 1,299</p>
-                    <a href="https://www.myntra.com/">View Product</a>
-                </article>
-            </section>
-
-            <hr>
-
-            <section>
-                <h2>FASHION AND LIFESTYLE OFFERS</h2>
-                <p>Explore new styles for your everyday wardrobe.</p>
-                <p>Find clothing, footwear and accessories for every occasion.</p>
-                <a href="https://www.myntra.com/">Explore More</a>
-            </section>
-
-        </main>
-
-        <hr>
-
-        <footer>
-            <section>
-                <h3>ONLINE SHOPPING</h3>
-                <ul>
-                    <li><a href="https://www.myntra.com/shop/men">Men</a></li>
-                    <li><a href="https://www.myntra.com/shop/women">Women</a></li>
-                    <li><a href="https://www.myntra.com/shop/kids">Kids</a></li>
-                    <li><a href="https://www.myntra.com/shoes">Footwear</a></li>
-                    <li><a href="https://www.myntra.com/accessories">Accessories</a></li>
-                </ul>
-            </section>
-
-            <section>
-                <h3>USEFUL LINKS</h3>
-                <ul>
-                    <li><a href="https://www.myntra.com/">Contact Us</a></li>
-                    <li><a href="https://www.myntra.com/">About Us</a></li>
-                    <li><a href="https://www.myntra.com/">Privacy Policy</a></li>
-                    <li><a href="https://www.myntra.com/">Terms and Conditions</a></li>
-                </ul>
-            </section>
-
-          
-        </footer>
-
-    </center>
+        <p class="copyright">© 2026 Myntra Fashion Store. Student project.</p>
+    </footer>
 
 </body>
 </html>
