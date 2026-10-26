@@ -21,6 +21,14 @@ a {
     color: inherit;
 }
 
+.delivery-info {
+    padding: 10px;
+    background-color: #282c3f;
+    color: #ffffff;
+    font-size: 13px;
+    text-align: center;
+}
+
 .header {
     width: 100%;
     min-height: 85px;
@@ -147,7 +155,7 @@ a {
     display: inline-block;
     padding: 13px 28px;
     background-color: #ff3f6c;
-    color: white;
+    color: #ffffff;
     font-size: 13px;
     font-weight: bold;
     border-radius: 4px;
@@ -285,6 +293,28 @@ a {
 .style-banner h2 {
     font-size: 30px;
     margin-bottom: 25px;
+}
+
+.benefits {
+    background-color: #fff5f7;
+}
+
+.benefit-card {
+    padding: 25px 15px;
+    background-color: #ffffff;
+    border-radius: 7px;
+    box-shadow: 0 3px 12px #e5e5e5;
+}
+
+.benefit-card h3 {
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+.benefit-card p {
+    color: #666666;
+    font-size: 14px;
+    line-height: 1.7;
 }
 
 .footer {
