@@ -26,7 +26,6 @@ a {
     background-color: #282c3f;
     color: #ffffff;
     font-size: 13px;
-    text-align: center;
 }
 
 .header {
@@ -217,6 +216,51 @@ a {
     font-size: 17px;
 }
 
+.special-offers {
+    background-color: #ffffff;
+}
+
+.offers-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.offer-card {
+    padding: 35px 15px;
+    background-color: #fff0f4;
+    border: 1px solid #ffe0e8;
+    border-radius: 6px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.offer-card:hover {
+    transform: translateY(-5px);
+}
+
+.offer-card h3 {
+    color: #ff3f6c;
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+.offer-card p {
+    color: #555555;
+    margin-bottom: 20px;
+}
+
+.offer-card a {
+    display: inline-block;
+    color: #282c3f;
+    font-size: 12px;
+    font-weight: bold;
+    border-bottom: 2px solid #ff3f6c;
+    padding-bottom: 5px;
+}
+
 .trending {
     background-color: #fafafa;
 }
@@ -356,6 +400,10 @@ a {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
+    .offers-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
     .hero h1 {
         font-size: 38px;
     }
@@ -397,7 +445,8 @@ a {
     }
 
     .category-grid,
-    .product-grid {
+    .product-grid,
+    .offers-grid {
         grid-template-columns: 1fr;
         max-width: 350px;
     }
