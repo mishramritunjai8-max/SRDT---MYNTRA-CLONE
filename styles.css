@@ -361,6 +361,64 @@ a {
     line-height: 1.7;
 }
 
+.newsletter {
+    padding: 55px 20px;
+    background-color: #fff0f4;
+    text-align: center;
+}
+
+.newsletter h2 {
+    font-size: 27px;
+    color: #282c3f;
+    margin-bottom: 15px;
+}
+
+.newsletter > p {
+    color: #666666;
+    line-height: 1.7;
+    margin-bottom: 22px;
+}
+
+.newsletter-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.newsletter-form input {
+    width: 280px;
+    max-width: 100%;
+    padding: 13px;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.newsletter-form button {
+    padding: 13px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #ff3f6c;
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.newsletter-form button:hover {
+    background-color: #d92d58;
+}
+
+.newsletter .newsletter-note {
+    margin-top: 18px;
+    margin-bottom: 0;
+    font-size: 12px;
+    color: #777777;
+}
+
 .footer {
     padding: 35px 20px;
     background-color: #fafafa;
@@ -457,5 +515,15 @@ a {
 
     .product-card img {
         height: 300px;
+    }
+
+    .newsletter-form {
+        flex-direction: column;
+    }
+
+    .newsletter-form input,
+    .newsletter-form button {
+        width: 100%;
+        max-width: 320px;
     }
 }
