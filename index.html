@@ -1,20 +1,22 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Myntra - Fashion Store</title>
+    <title>Myntra | Fashion Store</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="top-message">
-        Free delivery on orders above ₹799 | Easy returns | 100% secure payments
+
+    <div class="top-bar">
+        <p>FLAT 20% OFF ON YOUR FIRST ORDER | USE CODE: NEW20</p>
     </div>
 
     <header class="header">
         <a href="#" class="logo">MYN<span>TRA</span></a>
 
-        <nav class="navigation">
+        <nav class="nav-links">
             <a href="#men">MEN</a>
             <a href="#women">WOMEN</a>
             <a href="#kids">KIDS</a>
@@ -27,127 +29,322 @@
             <input type="text" id="searchInput" placeholder="Search for products, brands and more">
         </div>
 
-        <div class="account-links">
-            <a href="#profile">Profile</a>
-            <a href="#wishlist">Wishlist</a>
-            <a href="#bag">Bag <span id="bagCount">0</span></a>
+        <div class="header-actions">
+            <a href="#profile"><span>♙</span> Profile</a>
+            <a href="#wishlist"><span>♡</span> Wishlist</a>
+            <a href="#bag"><span>♧</span> Bag <b id="bagCount">0</b></a>
         </div>
     </header>
 
     <main>
-        <section class="sale-strip">
-            <p>THE BIG FASHION SALE IS HERE</p>
-            <h1>UP TO 70% OFF</h1>
-            <span>Fresh styles. Better prices. Your kind of fashion.</span>
-        </section>
-
         <section class="hero">
-            <div class="hero-copy">
-                <p class="eyebrow">NEW SEASON • NEW LOOK</p>
-                <h2>Style that feels<br>like <span>you.</span></h2>
-                <p>Find everyday favourites, little statement pieces and outfits for every plan.</p>
-                <a href="#trending" class="pink-button">SHOP THE COLLECTION</a>
+            <div class="hero-content">
+                <p class="tagline">THE NEW SEASON COLLECTION</p>
+                <h1>Fashion that<br>defines <span>you.</span></h1>
+                <p class="hero-description">
+                    Discover the latest trends, everyday essentials
+                    and styles that make every moment special.
+                </p>
+                <a href="#products" class="primary-btn">EXPLORE COLLECTION <span>→</span></a>
+                <div class="hero-note">
+                    <span>✦</span> New styles added every week
+                </div>
             </div>
-            <div class="hero-photo">
-                <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1100&q=85" alt="Friends browsing fashion clothes">
+
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1200&q=85" alt="Fashion collection">
+                <div class="image-label">
+                    <small>NEW COLLECTION</small>
+                    <strong>Own Your Style.</strong>
+                </div>
             </div>
         </section>
 
-        <section class="section" id="categories">
+        <section class="category-section" id="categories">
             <div class="section-heading">
-                <p class="eyebrow">A LITTLE SOMETHING FOR EVERYONE</p>
-                <h2>Shop by category</h2>
+                <div>
+                    <p class="section-label">FIND YOUR LOOK</p>
+                    <h2>Shop by category</h2>
+                </div>
+                <a href="#products" class="view-link">View all products →</a>
             </div>
+
             <div class="category-grid">
-                <a class="category-card" id="men" href="#trending">
-                    <img src="https://images.unsplash.com/photo-1516257984-b1b4d707412e?auto=format&fit=crop&w=700&q=80" alt="Men's casual fashion">
-                    <div><h3>Men's Wear</h3><p>Everyday essentials</p></div>
+                <a href="#products" class="category-card" data-category="Men">
+                    <img src="https://images.unsplash.com/photo-1516257984-b1b4d707412e?auto=format&fit=crop&w=700&q=80" alt="Men's fashion">
+                    <div class="category-overlay">
+                        <h3>Men</h3>
+                        <span>Explore now →</span>
+                    </div>
                 </a>
-                <a class="category-card" id="women" href="#trending">
-                    <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=700&q=80" alt="Women's fashion">
-                    <div><h3>Women's Wear</h3><p>Made to stand out</p></div>
+
+                <a href="#products" class="category-card" data-category="Women">
+                    <img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=700&q=80" alt="Women's fashion">
+                    <div class="category-overlay">
+                        <h3>Women</h3>
+                        <span>Explore now →</span>
+                    </div>
                 </a>
-                <a class="category-card" id="kids" href="#trending">
-                    <img src="https://images.unsplash.com/photo-1519238263530-99bdd11df2ea?auto=format&fit=crop&w=700&q=80" alt="Kids clothing">
-                    <div><h3>Kids' Corner</h3><p>Playful little looks</p></div>
+
+                <a href="#products" class="category-card" data-category="Kids">
+                    <img src="https://images.unsplash.com/photo-1519238263530-99bdd11df2ea?auto=format&fit=crop&w=700&q=80" alt="Kids fashion">
+                    <div class="category-overlay">
+                        <h3>Kids</h3>
+                        <span>Explore now →</span>
+                    </div>
                 </a>
-                <a class="category-card" id="home" href="#trending">
-                    <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=700&q=80" alt="Trendy sneakers">
-                    <div><h3>Shoes & More</h3><p>Step out in style</p></div>
+
+                <a href="#products" class="category-card" data-category="Footwear">
+                    <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=700&q=80" alt="Footwear">
+                    <div class="category-overlay">
+                        <h3>Footwear</h3>
+                        <span>Explore now →</span>
+                    </div>
                 </a>
             </div>
         </section>
 
-        <section class="offer-section">
-            <div class="section-heading">
-                <p class="eyebrow">GOOD FINDS, GREAT PRICES</p>
-                <h2>Offers worth a look</h2>
+        <section class="deal-banner">
+            <div>
+                <p>THE BIG FASHION EVENT</p>
+                <h2>End of Season Sale</h2>
+                <h3>UP TO 70% OFF</h3>
+                <span>On styles you'll love. For a limited time.</span>
             </div>
-            <div class="offer-grid">
-                <div class="offer-card offer-one"><span>01 / THE DEAL</span><h3>Up to 50% off</h3><p>On selected everyday styles</p><a href="#trending">Explore offers →</a></div>
-                <div class="offer-card offer-two"><span>02 / JUST IN</span><h3>Fresh arrivals</h3><p>New pieces for your wardrobe</p><a href="#trending">See what's new →</a></div>
-                <div class="offer-card offer-three"><span>03 / YOUR PICK</span><h3>Style under ₹999</h3><p>Good style, easy on the pocket</p><a href="#trending">Shop now →</a></div>
-            </div>
+            <a href="#products" class="deal-button">SHOP THE SALE →</a>
         </section>
 
-        <section class="section products-section" id="trending">
-            <div class="section-heading">
-                <p class="eyebrow">THE ONES EVERYONE'S LOVING</p>
-                <h2>Trending right now</h2>
-                <p class="section-note">A few picks to get your style inspiration started.</p>
+        <section class="products-section" id="products">
+            <div class="section-heading product-heading">
+                <div>
+                    <p class="section-label">HANDPICKED FOR YOU</p>
+                    <h2>Trending this week</h2>
+                    <p class="heading-description">The styles everyone is talking about.</p>
+                </div>
+
+                <select id="sortProducts" aria-label="Sort products">
+                    <option value="default">Sort: Recommended</option>
+                    <option value="low">Price: Low to High</option>
+                    <option value="high">Price: High to Low</option>
+                </select>
             </div>
+
+            <div class="filter-bar">
+                <button class="filter-btn active" data-filter="All">All</button>
+                <button class="filter-btn" data-filter="Men">Men</button>
+                <button class="filter-btn" data-filter="Women">Women</button>
+                <button class="filter-btn" data-filter="Kids">Kids</button>
+                <button class="filter-btn" data-filter="Footwear">Footwear</button>
+            </div>
+
             <div class="product-grid" id="productGrid">
-                <article class="product-card">
-                    <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=700&q=80" alt="White casual t-shirt">
-                    <div class="product-info"><p class="brand-name">Roadster</p><h3>Classic Cotton T-Shirt</h3><p class="price">₹499 <del>₹999</del> <span>50% OFF</span></p><button class="add-button">ADD TO BAG</button></div>
+
+                <article class="product-card" data-category="Men" data-price="799">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=700&q=85" alt="Classic cotton t-shirt">
+                        <span class="discount-tag">50% OFF</span>
+                        <button class="wishlist-btn" aria-label="Add t-shirt to wishlist">♡</button>
+                    </div>
+                    <div class="product-info">
+                        <p class="brand">Roadster</p>
+                        <h3>Classic Cotton T-Shirt</h3>
+                        <div class="rating">★ 4.4 <span>| 1.2k</span></div>
+                        <p class="product-price">₹799 <del>₹1,599</del> <span>50% off</span></p>
+                        <button class="add-btn">ADD TO BAG</button>
+                    </div>
                 </article>
-                <article class="product-card">
-                    <img src="https://images.unsplash.com/photo-1542272604-787c3835535d?auto=format&fit=crop&w=700&q=80" alt="Blue denim jeans">
-                    <div class="product-info"><p class="brand-name">Highlander</p><h3>Blue Slim Fit Jeans</h3><p class="price">₹999 <del>₹1,499</del> <span>33% OFF</span></p><button class="add-button">ADD TO BAG</button></div>
+
+                <article class="product-card" data-category="Men" data-price="1299">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1542272604-787c3835535d?auto=format&fit=crop&w=700&q=85" alt="Blue denim jeans">
+                        <span class="discount-tag">35% OFF</span>
+                        <button class="wishlist-btn" aria-label="Add jeans to wishlist">♡</button>
+                    </div>
+                    <div class="product-info">
+                        <p class="brand">Highlander</p>
+                        <h3>Slim Fit Denim Jeans</h3>
+                        <div class="rating">★ 4.2 <span>| 850</span></div>
+                        <p class="product-price">₹1,299 <del>₹1,999</del> <span>35% off</span></p>
+                        <button class="add-btn">ADD TO BAG</button>
+                    </div>
                 </article>
-                <article class="product-card">
-                    <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=700&q=80" alt="Red sports shoes">
-                    <div class="product-info"><p class="brand-name">Puma</p><h3>Everyday Sports Shoes</h3><p class="price">₹1,299 <del>₹1,999</del> <span>35% OFF</span></p><button class="add-button">ADD TO BAG</button></div>
+
+                <article class="product-card" data-category="Women" data-price="1499">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=700&q=85" alt="Women's casual outfit">
+                        <span class="discount-tag">40% OFF</span>
+                        <button class="wishlist-btn" aria-label="Add dress to wishlist">♡</button>
+                    </div>
+                    <div class="product-info">
+                        <p class="brand">StyleCast</p>
+                        <h3>Printed Casual Dress</h3>
+                        <div class="rating">★ 4.5 <span>| 2.1k</span></div>
+                        <p class="product-price">₹1,499 <del>₹2,499</del> <span>40% off</span></p>
+                        <button class="add-btn">ADD TO BAG</button>
+                    </div>
                 </article>
-                <article class="product-card">
-                    <img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=700&q=80" alt="Modern women's outfit">
-                    <div class="product-info"><p class="brand-name">StyleCast</p><h3>Printed Casual Dress</h3><p class="price">₹899 <del>₹1,499</del> <span>40% OFF</span></p><button class="add-button">ADD TO BAG</button></div>
+
+                <article class="product-card" data-category="Footwear" data-price="1999">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=700&q=85" alt="Red sports shoes">
+                        <span class="discount-tag">30% OFF</span>
+                        <button class="wishlist-btn" aria-label="Add shoes to wishlist">♡</button>
+                    </div>
+                    <div class="product-info">
+                        <p class="brand">Puma</p>
+                        <h3>Everyday Sports Shoes</h3>
+                        <div class="rating">★ 4.6 <span>| 980</span></div>
+                        <p class="product-price">₹1,999 <del>₹2,899</del> <span>30% off</span></p>
+                        <button class="add-btn">ADD TO BAG</button>
+                    </div>
                 </article>
+
+                <article class="product-card" data-category="Women" data-price="999">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=700&q=85" alt="Women's fashion outfit">
+                        <span class="discount-tag">25% OFF</span>
+                        <button class="wishlist-btn" aria-label="Add outfit to wishlist">♡</button>
+                    </div>
+                    <div class="product-info">
+                        <p class="brand">DressBerry</p>
+                        <h3>Everyday Fashion Top</h3>
+                        <div class="rating">★ 4.3 <span>| 640</span></div>
+                        <p class="product-price">₹999 <del>₹1,299</del> <span>25% off</span></p>
+                        <button class="add-btn">ADD TO BAG</button>
+                    </div>
+                </article>
+
+                <article class="product-card" data-category="Kids" data-price="699">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1519238263530-99bdd11df2ea?auto=format&fit=crop&w=700&q=85" alt="Kids casual clothes">
+                        <span class="discount-tag">30% OFF</span>
+                        <button class="wishlist-btn" aria-label="Add kidswear to wishlist">♡</button>
+                    </div>
+                    <div class="product-info">
+                        <p class="brand">Little Style</p>
+                        <h3>Kids Casual Collection</h3>
+                        <div class="rating">★ 4.1 <span>| 420</span></div>
+                        <p class="product-price">₹699 <del>₹999</del> <span>30% off</span></p>
+                        <button class="add-btn">ADD TO BAG</button>
+                    </div>
+                </article>
+
+                <article class="product-card" data-category="Footwear" data-price="1599">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=700&q=85" alt="Women's footwear">
+                        <span class="discount-tag">20% OFF</span>
+                        <button class="wishlist-btn" aria-label="Add footwear to wishlist">♡</button>
+                    </div>
+                    <div class="product-info">
+                        <p class="brand">Trendyol</p>
+                        <h3>Everyday Fashion Shoes</h3>
+                        <div class="rating">★ 4.2 <span>| 510</span></div>
+                        <p class="product-price">₹1,599 <del>₹1,999</del> <span>20% off</span></p>
+                        <button class="add-btn">ADD TO BAG</button>
+                    </div>
+                </article>
+
+                <article class="product-card" data-category="Men" data-price="899">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1618354691373-d851c5c3a990?auto=format&fit=crop&w=700&q=85" alt="Men's casual shirt">
+                        <span class="discount-tag">45% OFF</span>
+                        <button class="wishlist-btn" aria-label="Add shirt to wishlist">♡</button>
+                    </div>
+                    <div class="product-info">
+                        <p class="brand">Roadster</p>
+                        <h3>Casual Printed Shirt</h3>
+                        <div class="rating">★ 4.4 <span>| 730</span></div>
+                        <p class="product-price">₹899 <del>₹1,599</del> <span>45% off</span></p>
+                        <button class="add-btn">ADD TO BAG</button>
+                    </div>
+                </article>
+
             </div>
-            <p class="empty-message" id="emptyMessage">No matching products found. Try another search.</p>
+
+            <p class="no-results" id="noResults">No products found. Try another search.</p>
         </section>
 
-        <section class="style-banner" id="beauty">
-            <div><p class="eyebrow">A GOOD OUTFIT CHANGES THE MOOD</p><h2>Your style.<br>Your rules.</h2><p>Wear what makes you feel like yourself.</p><a href="#categories" class="light-button">FIND YOUR STYLE</a></div>
+        <section class="style-section" id="beauty">
+            <div class="style-content">
+                <p class="section-label">YOUR WARDROBE, YOUR STORY</p>
+                <h2>Make every<br>look count.</h2>
+                <p>Good style is all about feeling good in what you wear.</p>
+                <a href="#products" class="primary-btn">DISCOVER MORE →</a>
+            </div>
         </section>
 
-        <section class="benefits">
-            <div class="benefit"><span>🚚</span><h3>Quick delivery</h3><p>Your favourites, at your door.</p></div>
-            <div class="benefit"><span>↩</span><h3>Easy returns</h3><p>Changed your mind? No stress.</p></div>
-            <div class="benefit"><span>🔒</span><h3>Safe payments</h3><p>A smooth and secure checkout.</p></div>
-            <div class="benefit"><span>✦</span><h3>Fresh styles</h3><p>New looks for every mood.</p></div>
+        <section class="service-section">
+            <div class="service-card">
+                <span>🚚</span>
+                <h3>Fast Delivery</h3>
+                <p>Get your favourites delivered to your door.</p>
+            </div>
+            <div class="service-card">
+                <span>↩</span>
+                <h3>Easy Returns</h3>
+                <p>Simple returns for a worry-free experience.</p>
+            </div>
+            <div class="service-card">
+                <span>🔒</span>
+                <h3>Secure Payments</h3>
+                <p>Shop with confidence every time.</p>
+            </div>
+            <div class="service-card">
+                <span>✦</span>
+                <h3>Latest Trends</h3>
+                <p>Fresh styles to keep your look updated.</p>
+            </div>
         </section>
 
         <section class="newsletter">
-            <p class="eyebrow">LET'S KEEP IN TOUCH</p>
-            <h2>A little fashion in your inbox</h2>
-            <p>Get updates on new collections, trends and special offers.</p>
-            <form class="newsletter-form" id="newsletterForm">
-                <input type="email" id="emailInput" placeholder="Enter your email address" aria-label="Email address" required>
+            <p class="section-label">STAY IN STYLE</p>
+            <h2>Get the good stuff first.</h2>
+            <p>Sign up for updates on new drops, trends and special offers.</p>
+            <form id="newsletterForm">
+                <input type="email" id="emailInput" placeholder="Enter your email address" required>
                 <button type="submit">SUBSCRIBE</button>
             </form>
         </section>
     </main>
 
     <footer class="footer">
-        <div class="footer-top">
-            <div><a href="#" class="logo footer-logo">MYN<span>TRA</span></a><p>Fashion is personal. Find pieces that feel right for you.</p></div>
-            <div><h3>SHOP</h3><a href="#men">Men</a><a href="#women">Women</a><a href="#kids">Kids</a><a href="#home">Shoes</a></div>
-            <div><h3>EXPLORE</h3><a href="#categories">Categories</a><a href="#trending">Trending</a><a href="#beauty">Style ideas</a></div>
-            <div><h3>HELP</h3><a href="#footer">Contact us</a><a href="#footer">Returns</a><a href="#footer">FAQs</a></div>
+        <div class="footer-main">
+            <div class="footer-about">
+                <a href="#" class="logo">MYN<span>TRA</span></a>
+                <p>A fashion destination for the styles you love and the looks you haven't tried yet.</p>
+            </div>
+
+            <div>
+                <h4>ONLINE SHOPPING</h4>
+                <a href="#men">Men</a>
+                <a href="#women">Women</a>
+                <a href="#kids">Kids</a>
+                <a href="#home">Footwear</a>
+            </div>
+
+            <div>
+                <h4>USEFUL LINKS</h4>
+                <a href="#categories">Categories</a>
+                <a href="#products">Trending products</a>
+                <a href="#beauty">Style inspiration</a>
+                <a href="#top">Back to top</a>
+            </div>
+
+            <div>
+                <h4>CONTACT</h4>
+                <p>Customer support</p>
+                <p>FAQs</p>
+                <p>Returns and refunds</p>
+            </div>
         </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Myntra Fashion Store. Student frontend project.</p>
+            <p>Made with HTML, CSS and JavaScript.</p>
         </div>
     </footer>
+
+    <div class="toast" id="toast"></div>
 
     <script src="script.js"></script>
 </body>
